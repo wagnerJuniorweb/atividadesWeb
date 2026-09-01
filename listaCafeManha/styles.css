@@ -9,7 +9,10 @@ body{
 }
 
 ul{
-    list-style-type: circle;
-    padding: auto;
+    list-style-type: none;
+    padding: 20px;
     margin: auto;
+    border: 1px solid #bbbbbb;
+    border-radius: 30% 2px;
+    border-width: 10px;
 }
