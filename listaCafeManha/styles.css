@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(50, 50, 50);
+    color: #bbbbbb;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1;
+    max-width: 800px;
+    padding: auto;
+    margin: 10px;
+}
+
+ul{
+    list-style-type: circle;
+    padding: auto;
+    margin: auto;
+}
