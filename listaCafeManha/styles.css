@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(50, 50, 50);
     color: #bbbbbb;
@@ -5,14 +11,24 @@ body{
     line-height: 1;
     max-width: 800px;
     padding: auto;
-    margin: 10px;
+    margin: 0 auto;
 }
 
 ul{
     list-style-type: none;
     padding: 20px;
     margin: auto;
-    border: 1px solid #bbbbbb;
-    border-radius: 30% 2px;
+    border: 1px solid #aaaaaa;
+    border-radius: 25% 2px;
     border-width: 10px;
+    box-shadow: 0 2px 4px #ffffff;
+}
+
+li{
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+
+li:last-child{
+    margin-bottom: 0;
 }
