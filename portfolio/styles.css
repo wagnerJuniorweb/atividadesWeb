@@ -1,20 +1,37 @@
 body{
-    background-color: rgb(50, 50, 50);
-    color: #bbbbbb;
+    background-color: rgb(210, 210, 230);
+    color: #333355;
     font-family:Arial, Helvetica, sans-serif;
-    max-width: 800px;
-    padding: 20px;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #000088;
+  margin: 15px 0;
 }
 
 .menu{
-    padding: 10px;
-    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    color: #aaaacc;
+    background-color: #000022;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu h1{
+    margin: 0 0 10px 0;
 }
 
 .menu a{
     margin: 0 10px;
-    color: #bbbbbb;
+    color: #aaaaaa;
     text-decoration: none;
     font-weight: bold;
 }
@@ -31,6 +48,11 @@ ul{
 }
 
 .content{
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    max-width: 800px;
     margin-top: 30px;
 }
 .content a{
@@ -41,7 +63,7 @@ ul{
 .section{
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(200, 200, 255);
     border-radius: 5px;
 }
 
@@ -54,4 +76,7 @@ ul{
     background: rgb(70, 70, 70);
     padding: 10px;
     border-radius: 3px;
+}
+.end p{
+    text-align: center;
 }
