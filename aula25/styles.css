@@ -1,0 +1,104 @@
+/* Configuração básica para o texto e fundo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Caixa do formulário */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaçamento abaixo de cada bloco de pergunta */
+form > div {
+  margin-bottom: 18px;
+}
+
+/* Título interno do grupo de Radio */
+p {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Rótulos padrão (Nome, Senha, Data) */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Caixas de entrada que devem ocupar a linha inteira (texto, senha e data) */
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Impede o input de passar do limite do form */
+}
+
+/* Ajuste específico para Radio e Checkbox */
+/* Remove o bloco para que fiquem alinhados lado a lado com seus textos */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Faz as etiquetas dos Radio/Checkbox ficarem na mesma linha que a caixa/bola */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline; /* Sobrescreve o display: block padrão das outras labels */
+  font-weight: normal; /* Deixa o texto da opção mais leve */
+  margin-right: 15px; /* Dá um espaço caso haja outra opção ao lado */
+  cursor: pointer;
+}
+
+/* Botão de Envio */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745; /* Cor verde para indicar sucesso/envio */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Efeito simples de mudança de cor ao passar o mouse no botão */
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+
+/*
+Seletores de Atributo (input[type="..."]): 
+Foram usados para aplicar regras de tamanho (width: 100%) apenas nos campos de texto, senha e data. 
+Se usássemos input puro, as bolinhas do radio e as caixas do checkbox também tentariam 
+esticar para 100% da tela, quebrando o layout.
+
+O Seletor de Irmão Adjacente (+): 
+A regra input[type="radio"] + label localiza a etiqueta que vem logo após a caixinha de seleção. 
+Ela força esse texto específico a ficar deitado na mesma linha (display: inline) e com uma escrita 
+mais fina (font-weight: normal), diferenciando-o dos títulos principais dos campos.
+
+Cursor Amigável (cursor: pointer): Adicionado aos botões de seleção para que o usuário saiba que 
+clicar em cima do texto da opção também ativa a caixinha.
+
+
+*/

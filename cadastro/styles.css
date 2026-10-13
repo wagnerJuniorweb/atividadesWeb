@@ -1,0 +1,71 @@
+body{
+    background-color: #eeeeff;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+fieldset{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #333;
+    min-width: 0;   
+    width: fit-content;
+}
+
+.form-group label{
+    flex: 0 0 160px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 50px;
+}
+
+.form-group input, .form-group select, .form-group textarea{
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group:has(textarea), .form-group:has(select[multiple]){
+    align-items: flex-start;
+}
+
+.form-group:has(input[type="checkbox"]):not(:has(p)) label{
+    flex: 1;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group:has(input[type="ccheckbox"]):not(:has(p)) input{
+    flex: 0 0 auto;
+}
+
+.form-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    width: 100%;
+    float: right;
+}
+
+.btn-submit{background: #0056b3; color: #fff; border-radius: 5px;}
+.btn-submit:hover{background: #004085; transform: translateY(-1pxx); border-radius: 5px;}
+.btn-submit:active{transform: translateY(0); border-radius: 5px;}
+
+.btn-reset{background: #e2e8f0; color: #4a5568; border-radius: 5px;}
+.btn-reset:hover{background: #cbd5e1; color: #2d3748; border-radius: 5px;}
+.btn-reset:active{background: #b8c2cc; border-radius: 5px;}

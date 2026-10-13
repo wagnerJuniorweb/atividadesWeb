@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html lang="pt-BR">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" 
+				content="width=device-width, initial=1.0">
+			<link rel="stylesheet" href="styles.css">
+			<title>Página de Cadastro</title>
+		</head>
+	<body>            
+        <main class="container">
+            <form action="resultado.html" method="get">
+                <fieldset><legend>Formulario de cadastro</legend>
+
+                <div class="form-group">
+                    <label for="idnome">Nome</label>
+                    <input type="text" id="idnome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="idemail">Email</label>
+                    <input type="email" id="idemail" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="iddata">Data de Nascimento</label>
+                    <input type="date" id="iddata" name="dataNascimento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="idsenha">Senha</label>
+                    <input type="password" id="idsenha" name="senha" required minlength="4">
+                </div>
+
+                <div class="form-group">
+                    <label for="iddisciplina">Disciplina Preferida</label>
+                    <select name="disciplina" id="iddisciplina">
+                        <option value="">Escolha uma disciplina</option>
+                        <option value="poo">Programação orientada a objetos</option>
+                        <option value="dw">Desenvolvimento Web</option>
+                        <option value="md">Modelagem de dados</option>
+                        <option value="opp2">Orientação para pesquisa e prática profissional</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="idpaises">Países que deseja visitar (selecione um ou mais)</label>
+                    <select name="paises" id="idpaises">
+                        <option value="">Escolha um pais</option>
+                        <option value="br">Brasil</option>
+                        <option value="pt">Portugal</option>
+                        <option value="jp">Japão</option>
+                        <option value="fr">França</option>
+                        <option value="it">Itália</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Deseja receber novidades por email?
+                        <input type="checkbox" name="novidades" value="sim">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Quais assuntos voce deseja receber?</label>
+                    <input type="checkbox" id="tec" name="interesses" value="tecnologia" checked>
+                    <label for="tec">Tecnologia</label>
+
+                    <input type="checkbox" id="design" name="interesses" value="design" checked>
+                    <label for="design">Design</label>
+
+                    <input type="checkbox" id="prog" name="interesses" value="prog" checked>
+                    <label for="prog">Programação</label>
+                </div>
+                <div class="form-actions">
+                    <button type="reset" class="btn-reset">Limpar Campos</button>
+                    <button type="submit" class="btn-submit">Cadastrar</button>
+                </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

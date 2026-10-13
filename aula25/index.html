@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html lang="pt-BR">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" 
+				content="width=device-width, initial=1.0">
+			<link rel="stylesheet" href="styles.css">
+			<title>Página de Cadastro</title>
+		</head>
+	<body>
+		
+		<form action="/enviar" method="POST">
+  
+			<!-- Campo de Texto Obrigatório -->
+			<div>
+				<label for="nome">Nome Completo:</label>
+				<input type="text" id="nome" name="nome" 
+						placeholder="Digite seu nome" required>
+			</div>
+
+			<!-- Campo de Senha com Limite de Caracteres -->
+			<div>
+				<label for="senha">Senha:</label>
+				<input type="password" id="senha" 
+					   name="senha" minlength="6" required>
+			</div>
+
+			<!-- Campo de Data -->
+			<div>
+				<label for="nascimento">Data de Nascimento:</label>
+				<input type="date" id="nascimento" 
+					   name="dataNascimento">
+			</div>
+
+			<!-- Grupo Radio (Apenas uma escolha possível) -->
+			<div>
+				<p>Plano Desejado:</p>
+				<input type="radio" id="plano_free" 
+					   name="plano" value="gratuito" checked>
+				<label for="plano_free">Gratuito</label>
+
+				<input type="radio" id="plano_premium" 
+					   name="plano" value="pago">
+				<label for="plano_premium">Premium</label>
+			</div>
+
+			<!-- Checkbox (Caixa de Seleção) -->
+			<div>
+				<input type="checkbox" id="chk_termos" 
+					   name="aceitou_termos" required>
+				<label for="chk_termos">Li e aceito os termos de uso</label>
+			</div>
+
+			<button type="submit">Enviar Cadastro</button>
+		</form>
+		  
+		</body>
+	</html>
