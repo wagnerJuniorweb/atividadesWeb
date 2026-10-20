@@ -1,82 +1,72 @@
+
 <!DOCTYPE html>
-	<html lang="pt-BR">
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" 
-				content="width=device-width, initial=1.0">
-			<link rel="stylesheet" href="styles.css">
-			<title>Página de Cadastro</title>
-		</head>
-	<body>            
-        <main class="container">
-            <form action="resultado.html" method="post">
-                <fieldset><legend>Formulario de cadastro</legend>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <main class="container">
+        <form action="resultado.html" method="post">
+            <fieldset>
+                <h1>Cadastro de Produtos</h1>
 
                 <div class="form-group">
-                    <label for="idnome">Nome</label>
-                    <input type="text" id="idnome" name="nome" required>
+                    <label for="idcodigo">Código do Produto:</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="idcodigo" name="codigo" required placeholder="Ex: 1234567891011">
                 </div>
 
                 <div class="form-group">
-                    <label for="idemail">Email</label>
-                    <input type="email" id="idemail" name="email" required>
+                    <label for="idnome">Nome do Produto:</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="idnome" name="nome" required placeholder="Ex: Feijão tropeiro 2kg">
                 </div>
 
                 <div class="form-group">
-                    <label for="iddata">Data de Nascimento</label>
-                    <input type="date" id="iddata" name="dataNascimento" required>
+                    <label for="iddesc">Descrição:</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="iddesc" name="descricao" required placeholder="Detalhes sobre o produto..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="iddata">Data de Cadastro</label>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="iddata" name="dataCadastro" required>
+                </div>
+
+                <div class="form-group price-stock">
+                    <label for="idpreco">Preço (R$):</label>
+                    
+                    <label for="idestoque">Estoque Inicial:</label>
+                </div>
+                <div class="form-group price-stock">
+                    <input type="text" id="idpreco" name="preco" required minlength="3" placeholder="0,00">
+                    <input type="text" id="idestoque" name="estoque" required placeholder="0" min="0">
                 </div>
 
                 <div class="form-group">
-                    <label for="idsenha">Senha</label>
-                    <input type="password" id="idsenha" name="senha" required minlength="4">
-                </div>
-
-                <div class="form-group">
-                    <label for="iddisciplina">Disciplina Preferida</label>
+                    <label for="iddisciplina">Categoria do Produto:</label>
                     <select name="disciplina" id="iddisciplina">
-                        <option value="">Escolha uma disciplina</option>
-                        <option value="poo">Programação orientada a objetos</option>
-                        <option value="dw">Desenvolvimento Web</option>
-                        <option value="md">Modelagem de dados</option>
-                        <option value="opp2">Orientação para pesquisa e prática profissional</option>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="alimento">Alimentos</option>
+                        <option value="bebida">Bedidas</option>
+                        <option value="eletro">Eletrônicos</option>
+                        <option value="limpeza">Limpeza</option>
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label for="idpaises">Países que deseja visitar (selecione um ou mais)</label>
-                    <select name="paises" id="idpaises">
-                        <option value="">Escolha um pais</option>
-                        <option value="br">Brasil</option>
-                        <option value="pt">Portugal</option>
-                        <option value="jp">Japão</option>
-                        <option value="fr">França</option>
-                        <option value="it">Itália</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>
-                        Deseja receber novidades por email?
-                        <input type="checkbox" name="novidades" value="sim">
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>Quais assuntos voce deseja receber?</label>
-                    <input type="checkbox" id="tec" name="interesses" value="tecnologia" checked>
-                    <label for="tec">Tecnologia</label>
-
-                    <input type="checkbox" id="design" name="interesses" value="design" checked>
-                    <label for="design">Design</label>
-
-                    <input type="checkbox" id="prog" name="interesses" value="prog" checked>
-                    <label for="prog">Programação</label>
-                </div>
                 <div class="form-actions">
                     <button type="reset" class="btn-reset">Limpar Campos</button>
-                    <button type="submit" class="btn-submit">Cadastrar</button>
+                    <button type="submit" class="btn-submit">Cadastrar Produto</button>
                 </div>
-                </fieldset>
-            </form>
-        </main>
-    </body>
+            </fieldset>
+        </form>
+    </main>
+</body>
 </html>
