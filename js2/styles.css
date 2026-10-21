@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(50, 50, 50);
+    color: #bbbbbb;
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.menu{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a{
+    margin: 0 10px;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: circle;
+    padding: auto;
+    margin: auto;
+}
+
+.content{
+    margin-top: 30px;
+}
+.content a{
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.section{
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.external-link{
+    background: rgb(70, 70, 70);
+    padding: 10px;
+    border-radius: 3px;
+}
+.link-download{
+    background: rgb(70, 70, 70);
+    padding: 10px;
+    border-radius: 3px;
+}
